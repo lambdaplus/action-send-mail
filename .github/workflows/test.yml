@@ -48,7 +48,7 @@ jobs:
           password: ${{secrets.MAIL_PASSWORD}}
           subject: ${{github.repository}}
           body: ${{matrix.body}}
-          to: ${{github.event.pusher.email}}
+          to: wanghao010418@gmail.com
           from: github-actions
           content_type: ${{matrix.content_type}}
           convert_markdown: ${{matrix.convert_markdown}}
