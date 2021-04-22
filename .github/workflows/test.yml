@@ -42,10 +42,10 @@ jobs:
       - name: Send mail
         uses: ./
         with:
-          server_address: smtp.gmail.com
+          server_address: smtp.163.com
           server_port: 465
-          username: ${{secrets.USERNAME}}
-          password: ${{secrets.PASSWORD}}
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.MAIL_PASSWORD}}
           subject: ${{github.repository}}
           body: ${{matrix.body}}
           to: ${{github.event.pusher.email}}
