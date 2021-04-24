@@ -47,7 +47,7 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.MAIL_PASSWORD}}
           subject: ${{github.repository}}
-          body: ${{matrix.body}}
+          body: Test #${{matrix.body}}
           to: wanghao010418@gmail.com
           from: github-actions
           content_type: ${{matrix.content_type}}
